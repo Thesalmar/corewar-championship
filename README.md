@@ -1,1 +1,1 @@
-# zeta-se
+# corewar-championship
