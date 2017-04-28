@@ -1,1 +1,1 @@
-# corewar-championship
+# epitech-libproject
