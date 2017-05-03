@@ -5,10 +5,10 @@
 ** Login   <come.lemargue@epitech.eu>
 **
 ** Started on  Tue Feb 21 11:58:32 2017 Côme Lemargue
-** Last update Tue Feb 21 11:59:59 2017 Côme Lemargue
+** Last update Wed May  3 14:27:09 2017 thesalmar
 */
 
-int     my_getnbr(char *str)
+int	my_getnbr(char *str)
 {
   int   i;
   int   final;

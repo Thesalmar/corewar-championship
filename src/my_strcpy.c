@@ -5,14 +5,14 @@
 ** Login   <come.lemargue@epitech.eu>
 **
 ** Started on  Mon Nov  7 15:37:01 2016 Côme Lemargue
-** Last update Fri Apr 28 11:37:12 2017 thesalmar
+** Last update Wed May  3 14:27:45 2017 thesalmar
 */
 
 char	*my_strcpy(char *dest, char *src)
 {
   int	i;
 
-  while(src[i] != '\0')
+  while (src[i] != '\0')
     {
       dest[i] = src[i];
       i = i + 1;
