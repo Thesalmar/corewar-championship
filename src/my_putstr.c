@@ -1,30 +1,25 @@
 /*
-** my_putstr2.c for none in /home/thesalmar/EPITECH/save_code_important
-**
-** Made by Côme Lemargue
-** Login   <come.lemargue@epitech.eu>
-**
-** Started on  Wed Feb 22 10:36:52 2017 Côme Lemargue
-** Last update Fri Apr 28 13:33:23 2017 thesalmar
+** EPITECH PROJECT, 2017
+** my putstr
+** File description:
+** Print a defined string
 */
 
-#include <unistd.h>
+#include <stdlib.h>
 
-void	my_putchar(char c);
-
-void    my_putstr(char *str)
+int	my_putstr(char const *str)
 {
-  int   i;
+	int	i;
 
-  i = 0;
-  if (str == NULL)
-    {
-      return ;
-    }
+	i = 0;
 
-  while (str[i] != '\0')
-    {
-      my_putchar(str[i]);
-      i = i + 1;
-    }
+	if(str == NULL)
+	{
+		return ;
+	}
+	while(str[i] != '\0')
+	{
+		my_putchar(str[i]);
+		i++;
+	}
 }

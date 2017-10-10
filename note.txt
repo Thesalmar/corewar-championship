@@ -1,0 +1,7 @@
+Code qui marchent pas (simple return 0) :
+my_showmem
+my_is_prime
+my_find_is_prime
+my_showstr
+my_strcat
+my_strncat

@@ -5,10 +5,8 @@
 ** Login   <come.lemargue@epitech.eu>
 **
 ** Started on  Tue Feb 21 12:11:40 2017 Côme Lemargue
-** Last update Fri Apr 28 11:31:13 2017 thesalmar
+** Last update Tue Feb 21 12:14:40 2017 Côme Lemargue
 */
-
-void	my_putchar(char c);
 
 int	my_putnbr(int nb)
 {

@@ -1,25 +1,46 @@
 /*
-** my_getnbr.c for none in /home/thesalmar/EPITECH/save_code_important
-**
-** Made by Côme Lemargue
-** Login   <come.lemargue@epitech.eu>
-**
-** Started on  Tue Feb 21 11:58:32 2017 Côme Lemargue
-** Last update Wed May  3 14:27:09 2017 thesalmar
+** EPITECH PROJECT, 2017
+** my getnbr
+** File description:
+** Return number from the string
 */
 
-int	my_getnbr(char *str)
+int is_good(char c)
 {
-  int   i;
-  int   final;
+	if (c >= '0' && c <= '9')
+		return (1);
+	if (c == '+' || c == '-')
+		return (2);
+	return (0);
+	
+}
 
-  i = 0;
-  final = 0;
-  while (str[i] != '\0')
-    {
-      final = final * 10;
-      final = (str[i] - 48) + final;
-      i = i + 1;
-    }
-  return (final);
+int signe(char const *str, int i)
+{
+	int	neg = 1;
+
+	while (--i >= 0 && is_good(str[i]) == 2){
+		if (str[i] == '-')
+			neg = -neg;
+	}
+	return (neg);
+}
+
+int my_getnbr(char const *str)
+{
+	int i = 0;
+	int nb = 0;
+	int neg;
+
+	while (str[i] != '\0' && is_good(str[i]) != 1)
+		i++;
+	neg = signe(str, i);
+	while (str[i] != '\0' && is_good(str[i]) == 1)
+	{
+		nb = nb * 10;
+		nb = nb + str[i] - '0';
+		i++;
+	}
+	nb = nb * neg;
+	return (nb);
 }
