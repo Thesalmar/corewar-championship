@@ -9,7 +9,7 @@ int my_strncmp(char const *s1, char const *s2, int n)
 {
         int inc = 0;
 
-	while(inc < n)
+	while (inc < n)
 	{
 		while (s1[inc] == s2[inc] && s1[inc] != '\0' && s1[inc] != '\0')
 			inc++;

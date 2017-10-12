@@ -1,11 +1,11 @@
 /*
 ** EPITECH PROJECT, 2017
-** 
+** my putchar
 ** File description:
 ** 
 */
 
-int my_showstr(char const *str)
+void my_putchar(char c)
 {
-	return (0);
+	write(1, &c, 1);
 }

@@ -15,7 +15,7 @@ int my_str_isalpha(char const *str)
 	{
 		if (str[i] >= 'a' && str[i] <= 'z'  || str[i] >= 'A' && str[i] <= 'Z')
 			i++;
-		else if(str[i] >= '0' && str[i] <= '9')
+		else if (str[i] >= '0' && str[i] <= '9')
 			i++;
 		else
 			return (0);

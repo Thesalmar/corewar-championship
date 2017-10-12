@@ -5,14 +5,6 @@
 ** Return the string inside out
 */
 
-int     my_strlen(char *str)
-{
-        int i = 0;
-        while (str[i] != '\0')
-                i++;
-        return (i);
-}
-
 char	*my_revstr(char *str)
 {
 	int	i;
@@ -21,7 +13,7 @@ char	*my_revstr(char *str)
 
 	i = 0;
 	len = my_strlen(str) - 1;
-	while(len > i)
+	while (len > i)
 	{
 		temp = str[i];
 		str[i] = str[len];

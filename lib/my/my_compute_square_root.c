@@ -9,6 +9,6 @@ int	my_compute_square_root(int nb)
 {
 	int	res;
 
-	res = sqrt(nb);
+	res = 0;
 	return (res);
 }

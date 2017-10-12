@@ -1,11 +1,11 @@
 /*
 ** EPITECH PROJECT, 2017
-** 
+** my show str
 ** File description:
 ** 
 */
 
-int my_showmem(char const *str, int size)
+int my_showstr(char const *str)
 {
 	return (0);
 }

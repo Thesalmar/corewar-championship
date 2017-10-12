@@ -13,7 +13,7 @@ int my_str_isnum(char const *str)
 
 	while (str[i] != '\0')
 	{
-		if(str[i] >= '0' && str[i] <= '9')
+		if (str[i] >= '0' && str[i] <= '9')
 			i++;
 		else
 			return (0);
